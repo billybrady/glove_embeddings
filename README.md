@@ -90,7 +90,7 @@ glove.200 <- proc_pretrained_vec(g27b_200)
 print(dim(glove.200)) 
 ```
 
-## 5 - Define your dictionary
+## 5 - Define your dictionary (here we use a toy example)
 
 #### We will also check whether there are word vectors available for each word in the dictionary. This is because if not it will stop the loop below.
 
@@ -136,7 +136,7 @@ find_sim_wvs(this_word_vector, glove.200, top_n_res = 6)
 toc()
 ```
 
-    ## 22.42 sec elapsed
+    ## 24.93 sec elapsed
 
 #### On my machine, generating 5 similar words for 1 word vector takes \~20 secs).
 
